@@ -1,0 +1,121 @@
+/* -----------right-menu ------------------------ */
+.right-menu {
+  background-color: var(--color-base-100);
+  position        : sticky;
+  top             : 32px;
+
+  display       : flex;
+  flex-direction: column;
+  gap           : 20px;
+  align-items   : center;
+  padding       : 20px;
+  border-radius : 12px;
+
+  max-width : 5%;
+  max-height: 85vh;
+}
+
+/* Toggle switch */
+ #toggle {
+  background-color: var(--color-primary-content);
+  opacity         : 0.5;
+  border-radius   : 50px;
+  width           : 40px;
+  padding         : 0 20px;
+  /* desktop mặc định */
+  height          : 20px;
+  position        : relative;
+  cursor          : pointer;
+  transition      : background-color 0.3s ease, opacity 0.3s ease;
+}
+
+ #toggle #toggle-fill {
+  position        : absolute;
+  top             : 2px;
+  left            : 2px;
+  width           : 16px;
+  /* luôn = height - 4px */
+  height          : 16px;
+  border-radius   : 50%;
+  background-color: var(--color-primary);
+  box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition      : transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active state */
+ #toggle.active {
+  background-color: var(--color-primary);
+  opacity         : 1;
+}
+
+ #toggle.active #toggle-fill {
+  transform       : translateX(20px);
+  /* width - height */
+  background-color: var(--color-primary-content);
+}
+
+.right-menu .menu {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  gap            : 32px;
+  height: 100%;
+}
+
+.right-menu .menu a {
+  background-color: var(--color-base-100);
+  opacity         : 60%;
+  color           : var(--color-primary-content);
+  border-radius   : 8px;
+  padding         : 12px;
+
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  gap            : 10px;
+}
+
+.right-menu .menu a ion-icon {
+  width : 24px;
+  height: 24px;
+}
+
+.right-menu .menu a:hover {
+  background-color: var(--color-primary);
+  opacity         : 1;
+  color           : var(--color-primary-content);
+  border-radius   : 8px;
+  padding         : 12px;
+  transition      : 0.3s ease-in-out;
+}
+
+.right-menu .menu a.active {
+  color           : var(--color-primary);
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity         : 1;
+}
+
+@media (max-width:1190px) {
+  .right-menu #toggle {
+    width           : 36px;
+    height          : 16px;
+    background-color: var(--color-primary-content);
+    padding         : 0 19px;
+  }
+
+  .right-menu #toggle #toggle-fill {
+    width           : calc(100% - 27px);
+    height          : calc(100% - 4px);
+    background-color: var(--color-primary);
+  }
+
+  .right-menu #toggle.active {
+    background-color: var(--color-primary);
+  }
+
+  .right-menu #toggle.active #toggle-fill {
+    transform       : translateX(calc(100% - -10px));
+    background-color: var(--color-primary-content);
+  }
+}

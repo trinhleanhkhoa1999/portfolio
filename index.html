@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <link rel="stylesheet" href="./styles/root.css">
+  <link rel="stylesheet" href="./styles/info-sidebar.css">
+  <link rel="stylesheet" href="./styles/main-content.css">
+  <link rel="stylesheet" href="./styles/right-menu.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- info-sidebar -->
+      <div class="info-sidebar">
+        <!-- user-info -->
+        <div class="user-info">
+          <div class="avatar">
+            <div class="status"></div>
+            <img src="./assets/images/me.jpg" alt="">
+          </div>
+          <div class="info-name">
+            <h4>Khoa Trinh</h4>
+            <span class="xs">Frontend Developer</span>
+          </div>
+          <ul class="social-media">
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-Youtube"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </li>
+          </ul>
+        </div>
+        <!-- info -->
+        <div class="info">
+          <div class="info-item">
+            <span class="xs">Email:</span>
+            <span class="sm">trinhleanhkhoa1999@gmail</span>
+          </div>
+          <div class="info-item">
+            <span class="xs">Phone:</span>
+            <span class="sm">0932704521</span>
+          </div>
+          <div class="info-item">
+            <span class="xs">Residence:</span>
+            <span class="sm">Vietnamese</span>
+          </div>
+          <div class="info-item">
+            <span class="xs">City:</span>
+            <span class="sm">TP.Ho Chi Minh</span>
+          </div>
+          <div class="info-item">
+            <span class="xs">Age:</span>
+            <span class="sm">26 Years</span>
+          </div>
+          <div class="info-item">
+            <span class="xs">Residence:</span>
+            <span class="sm">Vietnamese, English</span>
+          </div>
+          <hr>
+        </div>
+        <div class="major-skill">
+          <h6>Major Skill</h6>
+          <div id="major-skill-content"></div>
+        </div>
+
+        <div class="extra-skill">
+          <h6>Extra Skill</h6>
+          <div id="extra-skill-container"></div>
+        </div>
+        <a download="" href="./assets/cv/MyCV.pdf">
+          <p>Dowload My CV </p>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+        </a>
+      </div>
+      <!-- main-content -->
+      <div class="main-content">
+        <nav id="nav-mobile">
+          <div class="avatar">
+            <img src="./assets/images/me.jpg" alt="">
+          </div>
+          <div class="menu-mobile">
+            <button id="toggle-mobile">
+              <div id="toggle-mobile-fill"></div>
+            </button>
+            <button id="btn-mobile">
+              <ion-icon name="menu"></ion-icon>
+            </button>
+          </div>
+        </nav>
+        <div id="show-menu-mobile">
+          <nav class="menu" id="menu-icon-mobile">
+          </nav>
+        </div>
+        <header id="header">
+          <div class="header-content">
+            <h1>Hi, I'm Trịnh Lê Anh Khoa
+            </h1>
+            <p>I am a Frontend Developer seeking an environment or company where I can contribute and grow.
+            </p>
+            <button>
+              <h6>Let’s Talk</h6>
+              <ion-icon name="arrow-forward-circle"></ion-icon>
+            </button>
+          </div>
+          <div class="header-img">
+            <img src="./assets/images/header.png" alt="">
+          </div>
+        </header>
+        <section id="services">
+          <div class="service-heading">
+            <h1>My Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat libero ullam commodi nostrum ratione!
+            </p>
+          </div>
+          <div class="service-container" id="render-services">
+          </div>
+        </section>
+        <section id="education">education</section>
+        <section id="experience">experience</section>
+        <section id="portfolio">portfolio</section>
+        <section id="getInTouch">get in touch</section>
+        <footer id="footer">footer</footer>
+      </div>
+      <!-- right-menu -->
+      <div class="right-menu">
+        <button id="toggle">
+          <div id="toggle-fill"></div>
+        </button>
+        <nav class="menu" id="menu-icon">
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>

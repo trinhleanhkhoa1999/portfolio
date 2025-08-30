@@ -1,0 +1,166 @@
+@import url("./main-content.css");
+
+:root {
+  /* =======================
+     Typography System
+  ======================== */
+  --h1-font-size             : 36px;
+  --h1-line-height           : 40px;
+  --h1-font-size-responsive  : 24px;
+  --h1-line-height-responsive: 32px;
+
+  --h2-font-size             : 30px;
+  --h2-line-height           : 36px;
+  --h2-font-size-responsive  : 20px;
+  --h2-line-height-responsive: 28px;
+
+  --h3-font-size             : 24px;
+  --h3-line-height           : 32px;
+  --h3-font-size-responsive  : 18px;
+  --h3-line-height-responsive: 26px;
+
+  --h4-font-size             : 20px;
+  --h4-line-height           : 28px;
+  --h4-font-size-responsive  : 16px;
+  --h4-line-height-responsive: 24px;
+
+  --h5-font-size             : 18px;
+  --h5-line-height           : 26px;
+  --h5-font-size-responsive  : 18px;
+  --h5-line-height-responsive: 26px;
+
+  --h6-font-size             : 16px;
+  --h6-line-height           : 24px;
+  --h6-font-size-responsive  : 16px;
+  --h6-line-height-responsive: 24px;
+
+  --p-font-size             : 14px;
+  --p-line-height           : 20px;
+  --p-font-size-responsive  : 12px;
+  --p-line-height-responsive: 16px;
+  /* =======================
+     Color System
+  ======================== */
+  --color-bg                : #F6F6F6;
+
+  --color-primary        : #F78F42;
+  --color-primary-focus  : #405BD5;
+  --color-primary-content: #131313;
+
+  --color-secondary        : #696A75;
+  --color-secondary-focus  : #3B3C4A;
+  --color-secondary-content: #FFFFFF;
+
+  --color-accent        : #3CC288;
+  --color-accent-focus  : #33A574;
+  --color-accent-content: #FFFFFF;
+
+  --color-neutral        : #181A2A;
+  --color-neutral-focus  : #141624;
+  --color-neutral-content: #FFFFFF;
+
+  --color-base-100    : #FFFFFF;
+  --color-base-200    : #F6F6F7;
+  --color-base-300    : #E8E8EA;
+  --color-base-content: #181A2A;
+}
+
+/* =======================
+   Headings Default Styles
+======================== */
+h1 {
+  font-size  : var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: 600;
+  /* semibold */
+}
+
+h2 {
+  font-size  : var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 600;
+}
+
+h3 {
+  font-size  : var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: 600;
+}
+
+h4 {
+  font-size  : var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  font-weight: 600;
+}
+
+h5 {
+  font-size  : var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  font-weight: 600;
+}
+
+h6 {
+  font-size  : var(--h6-font-size);
+  line-height: var(--h6-line-height);
+  font-weight: 600;
+}
+
+p {
+  font-size  : var(--p-font-size);
+  line-height: var(--p-line-height);
+  font-weight: 400;
+}
+
+.sm {
+  font-size  : 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color      : var(--color-base-content);
+  opacity    : 60%;
+}
+
+.xs {
+  font-size  : 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color      : var(--color-base-content);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size  : var(--h1-font-size-responsive);
+    line-height: var(--h1-line-height-responsive);
+  }
+
+  h2 {
+    font-size  : var(--h2-font-size-responsive);
+    line-height: var(--h2-line-height-responsive);
+  }
+
+  h3 {
+    font-size  : var(--h3-font-size-responsive);
+    line-height: var(--h3-line-height-responsive);
+  }
+
+  h4 {
+    font-size  : var(--h4-font-size-responsive);
+    line-height: var(--h4-line-height-responsive);
+  }
+
+  h5 {
+    font-size  : var(--h5-font-size-responsive);
+    line-height: var(--h5-line-height-responsive);
+  }
+
+  h6 {
+    font-size  : var(--h6-font-size-responsive);
+    line-height: var(--h6-line-height-responsive);
+  }
+
+  p {
+    font-size  : var(--p-font-size);
+    line-height: var(--p-line-height);
+    font-weight: 400;
+  }
+}

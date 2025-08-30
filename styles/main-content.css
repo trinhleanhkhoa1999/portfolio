@@ -1,0 +1,594 @@
+:root {
+  /* =======================
+     Typography System
+  ======================== */
+  --h1-font-size             : 36px;
+  --h1-line-height           : 40px;
+  --h1-font-size-responsive  : 24px;
+  --h1-line-height-responsive: 32px;
+
+  --h2-font-size             : 30px;
+  --h2-line-height           : 36px;
+  --h2-font-size-responsive  : 20px;
+  --h2-line-height-responsive: 28px;
+
+  --h3-font-size             : 24px;
+  --h3-line-height           : 32px;
+  --h3-font-size-responsive  : 18px;
+  --h3-line-height-responsive: 26px;
+
+  --h4-font-size             : 20px;
+  --h4-line-height           : 28px;
+  --h4-font-size-responsive  : 16px;
+  --h4-line-height-responsive: 24px;
+
+  --h5-font-size             : 18px;
+  --h5-line-height           : 26px;
+  --h5-font-size-responsive  : 18px;
+  --h5-line-height-responsive: 26px;
+
+  --h6-font-size             : 16px;
+  --h6-line-height           : 24px;
+  --h6-font-size-responsive  : 16px;
+  --h6-line-height-responsive: 24px;
+
+  --p-font-size  : 14px;
+  --p-line-height: 24px;
+  /* =======================
+     Color System
+  ======================== */
+  --color-bg     : #F6F6F6;
+
+  --color-primary        : #F78F42;
+  --color-primary-focus  : #405BD5;
+  --color-primary-content: #131313;
+
+  --color-secondary        : #696A75;
+  --color-secondary-focus  : #3B3C4A;
+  --color-secondary-content: #FFFFFF;
+
+  --color-accent        : #3CC288;
+  --color-accent-focus  : #33A574;
+  --color-accent-content: #FFFFFF;
+
+  --color-neutral        : #181A2A;
+  --color-neutral-focus  : #141624;
+  --color-neutral-content: #FFFFFF;
+
+  --color-base-100    : #FFFFFF;
+  --color-base-200    : #F6F6F7;
+  --color-base-300    : #E8E8EA;
+  --color-base-content: #181A2A;
+}
+
+/* =======================
+   Headings Default Styles
+======================== */
+h1 {
+  font-size  : var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: 600;
+  /* semibold */
+}
+
+h2 {
+  font-size  : var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: 600;
+}
+
+h3 {
+  font-size  : var(--h3-font-size);
+  line-height: var(--h3-line-height);
+  font-weight: 600;
+}
+
+h4 {
+  font-size  : var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  font-weight: 600;
+}
+
+h5 {
+  font-size  : var(--h5-font-size);
+  line-height: var(--h5-line-height);
+  font-weight: 600;
+}
+
+h6 {
+  font-size  : var(--h6-font-size);
+  line-height: var(--h6-line-height);
+  font-weight: 600;
+}
+
+p {
+  font-size  : var(--p-font-size);
+  line-height: var(--p-line-height);
+  font-weight: 400;
+}
+
+.sm {
+  font-size  : 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color      : var(--color-base-content);
+  opacity    : 60%;
+}
+
+.xs {
+  font-size  : 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color      : var(--color-base-content);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size  : var(--h1-font-size-responsive);
+    line-height: var(--h1-line-height-responsive);
+  }
+
+  h2 {
+    font-size  : var(--h2-font-size-responsive);
+    line-height: var(--h2-line-height-responsive);
+  }
+
+  h3 {
+    font-size  : var(--h3-font-size-responsive);
+    line-height: var(--h3-line-height-responsive);
+  }
+
+  h4 {
+    font-size  : var(--h4-font-size-responsive);
+    line-height: var(--h4-line-height-responsive);
+  }
+
+  h5 {
+    font-size  : var(--h5-font-size-responsive);
+    line-height: var(--h5-line-height-responsive);
+  }
+
+  h6 {
+    font-size  : var(--h6-font-size-responsive);
+    line-height: var(--h6-line-height-responsive);
+  }
+}
+
+/* -----------------main-content-------------- */
+.main-content {
+  flex          : 1;
+  display       : flex;
+  flex-direction: column;
+  gap           : 128px;
+}
+
+#nav-mobile,
+#show-menu-mobile,
+#menu-icon-mobile {
+  display: none;
+}
+
+/* ------header------ */
+#header {
+  background-color: var(--color-base-100);
+
+  display      : flex;
+  gap          : 32px;
+  padding      : 30px 108px;
+  border-radius: 12px;
+}
+
+.header-content {
+  flex           : 1;
+  display        : flex;
+  justify-content: center;
+  flex-direction : column;
+  gap            : 32px;
+}
+
+.header-content h1 {
+  font-size  : 48px;
+  line-height: 56px;
+  font-weight: 600;
+  width      : fit-content;
+  margin     : 0;
+}
+
+.header-content button {
+  padding        : 6px 6px 6px 28px;
+  display        : flex;
+  justify-content: start;
+  align-items    : center;
+  gap            : 24px;
+  border-radius  : 56px;
+  background     : var(--color-primary);
+  width          : fit-content;
+}
+
+.header-content button ion-icon {
+  width : 44px;
+  height: 44px;
+}
+
+.header-content button:hover {
+  opacity: 90%;
+
+}
+
+.header-img {
+  flex    : 1;
+  position: relative;
+}
+
+.header-img img {
+
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+  display   : block;
+}
+
+/* ------services------ */
+#services {
+  display       : flex;
+  flex-direction: column;
+  gap           : 48px;
+}
+
+.service-heading {
+  display        : flex;
+  flex-direction : column;
+  gap            : 16px;
+  justify-content: center;
+  align-items    : center;
+  max-width      : 438px;
+  margin         : 0 auto;
+  text-align     : center;
+}
+
+.service-heading h1 {
+  font-weight: 700;
+}
+
+.service-heading p {
+  color  : var(--color-base-content);
+  opacity: 60%;
+}
+
+.service-container {
+  display              : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows   : repeat(2, 1fr);
+  grid-column-gap      : 24px;
+  grid-row-gap         : 24px;
+}
+
+.service-card {
+  border-radius: 12px;
+  padding      : 32px;
+  background   : var(--color-base-100);
+
+  display       : flex;
+  flex-direction: column;
+  gap           : 32px;
+}
+
+.service-card ion-icon {
+  width           : 32px;
+  height          : 32px;
+  border-radius   : 12px;
+  padding         : 16px;
+  background-color: var(--color-base-200);
+}
+
+.card-content {
+  display       : flex;
+  flex-direction: column;
+  gap           : 24px;
+}
+
+
+.card-content h6 {
+  color: var(--color-base-content);
+}
+
+.card-content-services {
+  display       : flex;
+  flex-direction: column;
+  gap           : 12px;
+}
+
+.service-item {
+  display    : flex;
+  gap        : 8px;
+  align-items: center;
+  color      : var(--color-base-content);
+  opacity    : 60%;
+}
+
+.service-item ion-icon {
+  width        : 12px;
+  height       : 10px;
+  padding      : 7px 6px;
+  border-radius: 15px;
+}
+
+
+.service-item p {
+  font-size: small;
+}
+
+@media (max-width:1536px) {
+  #header {
+    padding: 32px;
+
+  }
+
+  .header-img img {
+    position  : absolute;
+    top       : 32px;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+    display   : block;
+  }
+
+  .header-img img {
+    object-fit: fill;
+  }
+
+  .service-item p {
+    font-size: small;
+  }
+}
+
+@media (max-width:1310px) {
+  .service-container {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
+    grid-column-gap      : 24px;
+    grid-row-gap         : 24px;
+  }
+
+  .service-item p {
+    font-size: medium;
+  }
+}
+
+@media (max-width:960px) {
+  .main-content {
+    display       : flex;
+    flex-direction: column;
+    gap           : 64px;
+  }
+
+  #nav-mobile {
+    position: sticky;
+    top     : 32px;
+    left    : 0;
+    right   : 0;
+    z-index : 1000;
+
+    opacity         : 0.95;
+    display         : block;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    gap             : 64px;
+    padding         : 12px 24px 12px 12px;
+    border-radius   : 80px;
+    border          : 1px solid var(--color-base-100);
+    background-color: var(--color-base-100);
+    backdrop-filter : blur(6px);
+    /* hiệu ứng mờ khi cuộn */
+  }
+
+  #nav-mobile .avatar {
+    width : 36px;
+    height: 36px;
+  }
+
+  #nav-mobile img {
+    margin-top: 0;
+    width     : 100%;
+    height    : 100%;
+    border    : none;
+  }
+
+  .menu-mobile {
+    display    : flex;
+    align-items: center;
+    gap        : 24px;
+  }
+
+  /* Toggle-mobile switch */
+  #toggle-mobile {
+    background-color: var(--color-primary-content);
+    opacity         : 0.5;
+    border-radius   : 50px;
+    width           : 40px;
+    padding         : 0 20px;
+    /* desktop mặc định */
+    height          : 20px;
+    position        : relative;
+    cursor          : pointer;
+    transition      : background-color 0.3s ease, opacity 0.3s ease;
+  }
+
+  #toggle-mobile #toggle-mobile-fill {
+    position        : absolute;
+    top             : 2px;
+    left            : 2px;
+    width           : 16px;
+    /* luôn = height - 4px */
+    height          : 16px;
+    border-radius   : 50%;
+    background-color: var(--color-primary);
+    box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition      : transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* Active state */
+  #toggle-mobile.active {
+    background-color: var(--color-primary);
+    opacity         : 1;
+  }
+
+  #toggle-mobile.active #toggle-mobile-fill {
+    transform       : translateX(20px);
+    /* width - height */
+    background-color: var(--color-primary-content);
+  }
+
+  .menu-mobile #btn-mobile {
+    background-color: var(--color-base-100);
+  }
+
+  .menu-mobile ion-icon {
+    width  : 24px;
+    height : 24px;
+    opacity: 60%;
+  }
+
+  #show-menu-mobile {
+    position     : sticky;
+    top          : 150px;
+    margin-left  : auto;
+    width        : fit-content;
+    background   : var(--color-base-100);
+    z-index      : 999;
+    opacity      : 0.95;
+    border-radius: 50px;
+  }
+
+  #show-menu-mobile .menu {
+    display        : flex;
+    justify-content: end;
+    align-items    : center;
+    gap            : 32px;
+    height         : 100%;
+  }
+
+  #show-menu-mobile .menu a {
+    background-color: var(--color-base-100);
+    /* opacity         : 60%; */
+    color           : var(--color-primary-content);
+    border-radius   : 8px;
+    padding         : 12px;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 10px;
+  }
+
+  #show-menu-mobile .menu a ion-icon {
+    width : 24px;
+    height: 24px;
+  }
+
+  #show-menu-mobile .menu a:hover {
+    background-color: var(--color-primary);
+    opacity         : 1;
+    color           : var(--color-primary-content);
+    border-radius   : 8px;
+    padding         : 12px;
+    transition      : 0.3s ease-in-out;
+  }
+
+  #show-menu-mobile .menu a.active {
+    color           : var(--color-primary);
+    background-color: rgba(0, 0, 0, 0.05);
+    opacity         : 1;
+  }
+
+
+
+  .header-img img {
+    object-fit: fill;
+  }
+
+  .service-item p {
+    font-size: small;
+  }
+
+  .service-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
+  }
+}
+
+@media (max-width:704px) {
+  .header-img {
+    display: none;
+  }
+}
+
+/* 540 */
+@media (max-width:540px) {
+  .header-content {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .service-container {
+    grid-template-columns: 1fr;
+    grid-template-rows   : 1fr;
+  }
+
+  #show-menu-mobile {
+    border-radius: 16px;
+  }
+
+  #show-menu-mobile .menu {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+  }
+}
+
+/* 540 */
+@media (max-width:430px) {
+  .main-content {
+    display       : flex;
+    flex-direction: column;
+    gap           : 64px;
+    padding       : 20px;
+  }
+
+  .header-content {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .service-container {
+    grid-template-columns: 1fr;
+    grid-template-rows   : 1fr;
+  }
+
+  #show-menu-mobile {
+    border-radius: 16px;
+  }
+
+  #show-menu-mobile .menu {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-wrap      : wrap;
+    max-width      : 250px;
+  }
+}
