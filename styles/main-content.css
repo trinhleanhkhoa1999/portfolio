@@ -165,9 +165,13 @@ p {
 
 #nav-mobile,
 #show-menu-mobile,
+#menu-icon-mobile,
 #menu-icon-mobile {
   display: none;
+
 }
+
+#nav-mobile {}
 
 /* ------header------ */
 #header {
@@ -230,13 +234,20 @@ p {
 }
 
 /* ------services------ */
-#services {
+#services,
+#education,
+#experience,
+#portfolio,
+#getInTouch {
   display       : flex;
   flex-direction: column;
   gap           : 48px;
 }
 
-.service-heading {
+.service-heading,
+.education-heading,
+.portfolio-heading,
+.contact-heading {
   display        : flex;
   flex-direction : column;
   gap            : 16px;
@@ -247,7 +258,12 @@ p {
   text-align     : center;
 }
 
-.service-heading h1 {
+.service-heading h1,
+.education-heading h1,
+.portfolio-heading h1,
+.contact-heading h1 {
+  font-size  : 36px;
+  line-height: 40px;
   font-weight: 700;
 }
 
@@ -319,6 +335,227 @@ p {
   font-size: small;
 }
 
+.education-container {
+  display       : flex;
+  flex-direction: column;
+  gap           : 10px;
+  padding       : 40px;
+  border-radius : 12px;
+  background    : var(--color-base-100);
+}
+
+.education-content {
+  display       : flex;
+  gap           : 24px;
+  border-bottom : 1px solid gray;
+  padding-bottom: 30px;
+}
+
+.education-content:last-child {
+  border-bottom : none;
+  /* bỏ border cho item cuối */
+  padding-bottom: 0;
+  /* bỏ padding cho item cuối */
+}
+
+.education-left {
+  display       : flex;
+  flex-direction: column;
+  gap           : 12px;
+}
+
+.education-left h5,
+h6 {
+  color: var(--color-base-content);
+}
+
+.education-left .edu-info {
+  display    : flex;
+  gap        : 16px;
+  align-items: center;
+}
+
+.education-left .edu-info span {
+  color           : var(--color-primary);
+  background-color: #F78F421A;
+  border-radius   : 50px;
+  padding         : 4px 12px;
+}
+
+.education-right {
+  flex          : 1;
+  display       : flex;
+  flex-direction: column;
+  gap           : 16px;
+}
+
+.education-right p {
+  color  : var(--color-base-content);
+  opacity: 60%;
+}
+
+.tabs {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  gap            : 48px;
+  flex-wrap      : wrap;
+  color          : var(--color-base-content);
+}
+
+.tabs h6 {
+  color      : var(--color-base-content);
+  opacity    : 60%;
+  font-weight: 400;
+  cursor     : pointer;
+}
+
+.tab-active {
+  color      : var(--color-primary) !important;
+  font-weight: 500 !important;
+  opacity    : 1 !important;
+  transition : 0.3s ease-in-out;
+}
+
+.show-case {
+  display              : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows   : repeat(2, 1fr);
+  grid-column-gap      : 24px;
+  grid-row-gap         : 24px;
+}
+
+.show-case img {
+  border-radius: 12px;
+}
+
+.contact-container {
+  display: flex;
+  gap    : 24px;
+}
+
+.contact-form {
+  flex          : 1;
+  display       : flex;
+  flex-direction: column;
+  gap           : 24px;
+  padding       : 40px;
+  border-radius : 12px;
+  background    : var(--color-base-100);
+}
+
+
+
+
+
+/* form */
+#form-card {
+  display       : flex;
+  flex-direction: column;
+  gap           : 20px;
+}
+
+.form-group {
+  display       : flex;
+  flex-direction: column;
+  gap           : 12px;
+}
+
+.form-group label {
+  display      : block;
+  margin-bottom: 5px;
+  font-weight  : 500;
+  color        : var(--color-base-content);
+  opacity      : 60%;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width        : 100%;
+  padding      : 10px;
+  border       : 2px solid var(--color-base-200);
+  border-radius: 5px;
+  font-size    : 14px;
+  background   : var(--color-base-200);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline     : none;
+  border-color: var(--color-primary);
+}
+
+.form-row {
+  display: flex;
+  gap    : 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.btn-primary {
+  display         : flex;
+  gap             : 10px;
+  width           : fit-content;
+  padding         : 12px 16px;
+  border-radius   : 8px;
+  border          : none;
+  background-color: var(--color-primary);
+  color           : var(--color-base-content);
+}
+
+.contact-info {
+  display       : flex;
+  flex-direction: column;
+  gap           : 24px;
+  border-radius : 12px;
+}
+
+.contact-card,
+.contact-card-info {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  gap           : 12px;
+  padding       : 24px;
+  border-radius : 12px;
+  background    : var(--color-base-100);
+  width         : 100%;
+
+}
+
+.contact-card ion-icon {
+  display        : flex;
+  justify-content: center;
+  gap            : 10px;
+  padding        : 10px;
+  background     : var(--color-primary);
+  width          : 20px;
+  height         : 20px;
+  border-radius  : 50px;
+}
+
+.contact-item {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  flex-wrap      : wrap;
+  gap            : 24px;
+  width          : 100%;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: var(--color-base-100);
+}
+
 @media (max-width:1536px) {
   #header {
     padding: 32px;
@@ -355,6 +592,10 @@ p {
 
   .service-item p {
     font-size: medium;
+  }
+
+  .contact-info {
+    display: none;
   }
 }
 
@@ -473,11 +714,11 @@ p {
   }
 
   #show-menu-mobile .menu a {
-    background-color: var(--color-base-100);
+    background-color   : var(--color-base-100);
     /* opacity         : 60%; */
-    color           : var(--color-primary-content);
-    border-radius   : 8px;
-    padding         : 12px;
+    color              : var(--color-primary-content);
+    border-radius      : 8px;
+    padding            : 12px;
 
     display        : flex;
     justify-content: center;
@@ -518,6 +759,16 @@ p {
   .service-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows   : repeat(2, 1fr);
+  }
+
+  .education-container {
+    gap: 40px;
+  }
+
+  .education-content {
+    display       : flex;
+    flex-direction: column;
+    gap           : 24px;
   }
 }
 
@@ -590,5 +841,13 @@ p {
     align-items    : center;
     flex-wrap      : wrap;
     max-width      : 250px;
+  }
+
+  .show-case {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows   : repeat(2, 1fr);
+    grid-column-gap      : 12px;
+    grid-row-gap         : 12px;
   }
 }

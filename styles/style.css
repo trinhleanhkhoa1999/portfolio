@@ -34,7 +34,8 @@ body.dark h5,
 body.dark h6,
 body.dark p,
 body.dark .right-menu ion-icon,
-body.dark span {
+body.dark span,
+body.dark label {
   color: #fff;
 }
 
@@ -64,8 +65,12 @@ body.dark .info-sidebar .info-name span {
 body.dark .info-sidebar,
 body.dark .right-menu,
 body.dark .service-card,
-/* body.dark .service-card ion-icon, */
-body.dark #header {
+body.dark .education-container,
+body.dark #header,
+body.dark #footer,
+body.dark .contact-form,
+body.dark .contact-card ,
+body.dark .contact-card-info{
   background-color: #1C1C1C;
 }
 

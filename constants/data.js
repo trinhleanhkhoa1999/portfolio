@@ -90,11 +90,14 @@ export const servicesCard = [
   {
     title: "E-commerce Solutions",
     iconTitle: "cart",
-    serviceItem: [
-      "Shopify Development",
-      "WooCommerce",
-      "Custom Online Store",
-    ],
+    serviceItem: ["Shopify Development", "WooCommerce", "Custom Online Store"],
   },
 ];
 
+export const listTabs = [
+  "All categories",
+  "Ui Design",
+  "Web templates",
+  "Logo",
+  "Brading",
+];

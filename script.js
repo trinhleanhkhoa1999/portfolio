@@ -2,6 +2,7 @@ import { skills } from "./constants/data.js";
 import { extraSkill } from "./constants/data.js";
 import { menuIcon } from "./constants/data.js";
 import { servicesCard } from "./constants/data.js";
+import { listTabs } from "./constants/data.js";
 
 // ---------------section info sidebar----------
 // Render skills
@@ -159,3 +160,33 @@ servicesCard.forEach((item) => {
   `;
 });
 
+
+// const menuItems = document.querySelectorAll("#menu-icon .menu-item");
+
+// // xử lý active khi click
+// menuItems.forEach((el) => {
+//   el.addEventListener("click", (e) => {
+//     // e.preventDefault();
+
+//     menuItems.forEach((i) => i.classList.remove("active"));
+//     el.classList.add("active");
+//   });
+// });
+
+//--------------------- portfolio---------------
+const tabs = document.querySelectorAll(".tabs h6");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Xóa class active của tất cả
+    tabs.forEach((t) => t.classList.remove("tab-active"));
+    // Thêm class active cho cái đang click
+    tab.classList.add("tab-active");
+  });
+});
+
+// <h6 class="tab-active">All categories</h6>
+// <h6>Ui Design</h6>
+// <h6>Web templates</h6>
+// <h6>Logo</h6>
+// <h6>Brading</h6>
