@@ -35,6 +35,7 @@ body.dark h6,
 body.dark p,
 body.dark .right-menu ion-icon,
 body.dark span,
+body.dark li ion-icon,
 body.dark label {
   color: #fff;
 }
